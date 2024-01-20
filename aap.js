@@ -63,6 +63,7 @@ async function getCurrenty(firstCurency, secondCurency) {
 
   let firstvalue = await xhr[secondCurency];
   let sonuc = Number(firstİnput.value) * firstvalue;
+  sonuc=sonuc.tofixed(2);
   secondİnput.value = sonuc;
 }
 
